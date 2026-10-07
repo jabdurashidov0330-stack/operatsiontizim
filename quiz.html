@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Operatsion tizimlar - Test</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="quiz-header">
+
+    <div class="container">
+
+        <a
+            href="lesson.html"
+            class="back-btn"
+        >
+            ← Darsga qaytish
+        </a>
+
+        <h1>
+            🧠 Bilimingizni sinab ko‘ring
+        </h1>
+
+        <p>
+            Operatsion tizimlar rivoji bo‘yicha test
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= QUIZ ================= -->
+
+<main class="quiz-container">
+
+
+    <!-- TEST BOSHLANISHI -->
+
+    <section
+        id="quizBox"
+        class="quiz-box"
+    >
+
+        <div class="quiz-top">
+
+            <span id="questionNumber">
+                1 / 10
+            </span>
+
+            <span id="scoreText">
+                Ball: 0
+            </span>
+
+        </div>
+
+
+        <!-- SAVOL -->
+
+        <div class="question-box">
+
+            <h2 id="question">
+                Savol yuklanmoqda...
+            </h2>
+
+        </div>
+
+
+        <!-- JAVOBLAR -->
+
+        <div
+            id="answers"
+            class="answers"
+        >
+
+        </div>
+
+
+        <!-- KEYINGI -->
+
+        <button
+            id="nextButton"
+            class="quiz-button next-button"
+            onclick="nextQuestion()"
+            disabled
+        >
+            Keyingi savol →
+        </button>
+
+
+    </section>
+
+
+
+    <!-- ================= NATIJA ================= -->
+
+    <section
+        id="resultBox"
+        class="result-box"
+        style="display: none;"
+    >
+
+        <div class="result-icon">
+            🏆
+        </div>
+
+        <h2>
+            Test yakunlandi!
+        </h2>
+
+        <p>
+            Sizning natijangiz:
+        </p>
+
+        <div
+            id="finalScore"
+            class="final-score"
+        >
+            0 / 10
+        </div>
+
+        <p id="resultMessage">
+            Natija
+        </p>
+
+
+        <div class="result-buttons">
+
+            <button
+                class="quiz-button"
+                onclick="restartQuiz()"
+            >
+                🔄 Qayta ishlash
+            </button>
+
+            <a
+                href="lesson.html"
+                class="result-link"
+            >
+                📚 Darsga qaytish
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        💻 Operatsion tizimlar rivoji | Ta'limiy loyiha
+    </p>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

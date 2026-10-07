@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>🏆 Operatsion tizimlar bellashuvi</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="competition-header">
+
+    <div class="container">
+
+        <h1>
+            🏆 Operatsion tizimlar bellashuvi
+        </h1>
+
+        <p>
+            3 ta guruh o‘rtasidagi bilimlar musobaqasi
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= SCOREBOARD ================= -->
+
+<main class="competition-container">
+
+
+    <section class="scoreboard">
+
+        <div class="score-card score-blue">
+
+            <span class="score-icon">🔵</span>
+
+            <div>
+                <h3 id="groupName1">
+                    1-GURUH
+                </h3>
+
+                <strong id="competitionScore1">
+                    0
+                </strong>
+
+                <small>
+                    ball
+                </small>
+            </div>
+
+        </div>
+
+
+        <div class="score-card score-green">
+
+            <span class="score-icon">🟢</span>
+
+            <div>
+                <h3 id="groupName2">
+                    2-GURUH
+                </h3>
+
+                <strong id="competitionScore2">
+                    0
+                </strong>
+
+                <small>
+                    ball
+                </small>
+            </div>
+
+        </div>
+
+
+        <div class="score-card score-orange">
+
+            <span class="score-icon">🟠</span>
+
+            <div>
+                <h3 id="groupName3">
+                    3-GURUH
+                </h3>
+
+                <strong id="competitionScore3">
+                    0
+                </strong>
+
+                <small>
+                    ball
+                </small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ROUND INFO ================= -->
+
+    <section class="round-info">
+
+        <div>
+
+            <span>
+                Savol
+            </span>
+
+            <strong id="competitionQuestionNumber">
+                1 / 12
+            </strong>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                Guruh navbati
+            </span>
+
+            <strong id="currentGroupName">
+                1-GURUH
+            </strong>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                Guruh savoli
+            </span>
+
+            <strong id="groupQuestionNumber">
+                1 / 4
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= TURN ================= -->
+
+    <section class="turn-box">
+
+        <div class="turn-icon">
+            🎯
+        </div>
+
+        <h2 id="turnTitle">
+            1-GURUH navbati!
+        </h2>
+        <!-- TIMER -->
+<div class="competition-timer">
+    <div class="timer-icon">⏱️</div>
+    <div class="timer-text">
+        <span>Qolgan vaqt:</span>
+        <strong id="competitionTimer">20</strong>
+        <span>soniya</span>
+    </div>
+</div>
+
+        <p>
+            Savolga diqqat bilan javob bering.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= QUESTION ================= -->
+
+    <section class="competition-question">
+        <div
+    id="questionPoints"
+    class="question-points"
+>
+    10 BALL
+</div>
+<!-- ================= JOKERLAR ================= -->
+
+<div class="joker-panel">
+
+    <h3>🎯 Jokerlar</h3>
+
+    <div class="joker-buttons">
+
+        <button
+            id="joker5050"
+            class="joker-button joker-5050"
+            type="button"
+            onclick="useJoker('fifty')"
+        >
+            🌓 50/50
+        </button>
+
+        <button
+            id="jokerDouble"
+            class="joker-button joker-double"
+            type="button"
+            onclick="useJoker('double')"
+        >
+            ⚡ 2x Ball
+        </button>
+
+        <button
+            id="jokerTime"
+            class="joker-button joker-time"
+            type="button"
+            onclick="useJoker('time')"
+        >
+            ⏱️ +10 soniya
+        </button>
+
+    </div>
+
+    <p class="joker-info">
+        Har bir joker faqat 1 marta ishlatiladi.
+    </p>
+
+</div>
+
+        <h2 id="competitionQuestion">
+            Savol yuklanmoqda...
+        </h2>
+
+
+        <div
+            id="competitionAnswers"
+            class="competition-answers"
+        >
+
+        </div>
+
+
+        <button
+            id="competitionNext"
+            class="quiz-button competition-next"
+            onclick="nextCompetitionQuestion()"
+            disabled
+        >
+            Keyingi savol →
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= RESULT ================= -->
+
+    <section
+        id="competitionResult"
+        class="competition-result"
+        style="display: none;"
+    >
+
+        <div class="winner-cup">
+            🏆
+        </div>
+
+        <h2>
+            Bellashuv yakunlandi!
+        </h2>
+
+        <p>
+            Natijalar:
+        </p>
+
+
+        <div
+    id="finalCompetitionScores"
+    class="final-competition-scores"
+>
+</div>
+
+<!-- ================= PODIUM ================= -->
+
+<div
+    id="competitionPodium"
+    class="competition-podium"
+>
+</div>
+
+
+        <div
+            id="winnerText"
+            class="winner-text"
+        >
+
+        </div>
+
+
+        <div class="result-buttons">
+
+            <button
+                class="quiz-button"
+                onclick="restartCompetition()"
+            >
+                🔄 Qayta boshlash
+            </button>
+
+
+            <a
+                href="lesson.html"
+                class="result-link"
+            >
+                📚 Darsga qaytish
+            </a>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        💻 Operatsion tizimlar rivoji | Ta'limiy loyiha
+    </p>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

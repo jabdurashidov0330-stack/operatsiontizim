@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Operatsion Tizimlar Rivoji</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            💻 <span>OS</span> TARIXI
+        </div>
+
+        <div class="nav-info">
+            <span>📚 Interaktiv dars</span>
+            <span>🎓 Maktab o‘quvchilari uchun</span>
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    🚀 Informatika fanidan interaktiv dars
+                </div>
+
+                <h1>
+                    Operatsion tizimlar
+                    <span>rivojlanish tarixi</span>
+                </h1>
+
+                <p>
+                    Kompyuterlar qanday rivojlangan?
+                    Birinchi operatsion tizimlar qachon paydo bo‘lgan?
+                    Windows, Linux, Android va iOS qanday yaratilgan?
+                </p>
+
+                <p class="hero-description">
+                    Keling, operatsion tizimlar tarixini
+                    <strong>3 ta qiziqarli bosqich</strong>
+                    orqali birgalikda o‘rganamiz!
+                </p>
+
+                <button class="start-button" onclick="startLesson()">
+                    🚀 Darsni boshlash
+                </button>
+
+            </div>
+
+
+            <div class="hero-computer">
+
+                <div class="computer">
+                    <div class="screen">
+
+                        <div class="screen-top">
+                            <span>●</span>
+                            <span>●</span>
+                            <span>●</span>
+                        </div>
+
+                        <div class="screen-content">
+
+                            <div class="terminal-line">
+                                <span class="green">student@computer</span>:~$
+                            </div>
+
+                            <div class="terminal-text">
+                                Loading Operating System...
+                            </div>
+
+                            <div class="loading">
+                                <div class="loading-bar"></div>
+                            </div>
+
+                            <div class="terminal-success">
+                                ✓ System Ready!
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="computer-stand"></div>
+                    <div class="computer-base"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3 DAVR -->
+        <section class="period-preview" id="periods">
+
+            <div class="section-title">
+
+                <div class="small-title">
+                    📖 BIZ NIMANI O‘RGANAMIZ?
+                </div>
+
+                <h2>
+                    Operatsion tizimlarning
+                    <span>3 ta muhim davri</span>
+                </h2>
+
+                <p>
+                    Dastlabki kompyuterlardan zamonaviy smartfonlargacha
+                    bo‘lgan rivojlanish yo‘lini ko‘rib chiqamiz.
+                </p>
+
+            </div>
+
+
+            <div class="period-cards">
+
+                <!-- 1 -->
+                <div class="period-card first">
+
+                    <div class="card-number">01</div>
+
+                    <div class="card-icon">
+                        🖥️
+                    </div>
+
+                    <h3>
+                        Dastlabki davr
+                    </h3>
+
+                    <div class="card-years">
+                        1940–1960-yillar
+                    </div>
+
+                    <p>
+                        Birinchi elektron kompyuterlar,
+                        dastlabki dasturlar va operatsion
+                        tizimlarning paydo bo‘lishi.
+                    </p>
+
+                    <div class="card-bottom">
+                        🕐 Boshlanish davri
+                    </div>
+
+                </div>
+
+
+                <!-- 2 -->
+                <div class="period-card second">
+
+                    <div class="card-number">02</div>
+
+                    <div class="card-icon">
+                        🪟
+                    </div>
+
+                    <h3>
+                        DOS va Windows
+                    </h3>
+
+                    <div class="card-years">
+                        1970–2000-yillar
+                    </div>
+
+                    <p>
+                        MS-DOS, Windows 1.0, Windows 95
+                        va Windows XP kabi tizimlarning
+                        rivojlanishi.
+                    </p>
+
+                    <div class="card-bottom">
+                        🖱️ Grafik interfeys
+                    </div>
+
+                </div>
+
+
+                <!-- 3 -->
+                <div class="period-card third">
+
+                    <div class="card-number">03</div>
+
+                    <div class="card-icon">
+                        📱
+                    </div>
+
+                    <h3>
+                        Zamonaviy davr
+                    </h3>
+
+                    <div class="card-years">
+                        2000-yildan hozirgacha
+                    </div>
+
+                    <p>
+                        Windows 10/11, Linux, Android,
+                        iOS va zamonaviy texnologiyalarning
+                        rivojlanishi.
+                    </p>
+
+                    <div class="card-bottom">
+                        🤖 Zamonaviy texnologiyalar
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAQSAD -->
+        <section class="goal-section">
+
+            <div class="goal-icon">
+                🎯
+            </div>
+
+            <div class="goal-content">
+
+                <h2>
+                    Darsimizning maqsadi
+                </h2>
+
+                <p>
+                    Dars davomida siz operatsion tizim nima ekanini,
+                    u nima uchun kerakligini va uning qanday
+                    rivojlanganini bilib olasiz.
+                </p>
+
+                <div class="goal-list">
+
+                    <div>
+                        ✅ Operatsion tizim tushunchasini bilish
+                    </div>
+
+                    <div>
+                        ✅ Operatsion tizimlar tarixini o‘rganish
+                    </div>
+
+                    <div>
+                        ✅ Windows, Linux, Android va iOS haqida bilish
+                    </div>
+
+                    <div>
+                        ✅ Yakunda bilimlaringizni test orqali sinash
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTTOM -->
+        <section class="ready-section">
+
+            <div class="ready-content">
+
+                <span class="ready-emoji">🎓</span>
+
+                <h2>
+                    Bilim olishga tayyormisiz?
+                </h2>
+
+                <p>
+                    Unda operatsion tizimlar tarixiga sayohatni boshlaymiz!
+                </p>
+
+                <button class="start-button second-button"
+                        onclick="startLesson()">
+                    🚀 Boshlash
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div>
+            💻 <strong>Operatsion Tizimlar Rivoji</strong>
+        </div>
+
+        <p>
+            Informatika fani uchun interaktiv o‘quv dasturi
+        </p>
+
+        <div class="footer-copy">
+            © 2026 — Ta’lim loyihasi
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
